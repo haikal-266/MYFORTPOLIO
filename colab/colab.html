@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - LUZ NIGHTHACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colab.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Profile Card -->
+    <div class="mobile-profile-card">
+        <div class="mobile-avatar"></div>
+        <div class="mobile-name">LUZ NIGHTHACKER</div>
+        <div class="mobile-title">WEB DEVELOPER • LEGACY AI</div>
+        <div class="mobile-level">
+            <span class="mobile-level-number">48</span>
+            <span>LEVEL</span>
+        </div>
+        <div class="mobile-exp-bar">
+            <div class="mobile-exp-fill"></div>
+        </div>
+        <div class="mobile-social">
+            <a href="../landingpage/index.html" class="mobile-social-link">HOME</a>
+            <a href="#contact-form" class="mobile-social-link">HIRE</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="level-indicator">
+                    <span class="level-number">48</span>
+                    <span class="level-text">LEVEL</span>
+                </div>
+                
+                <div class="experience-bar">
+                    <div class="exp-fill"></div>
+                    <span class="exp-text">2 YEARS</span>
+                </div>
+            </div>
+
+            <div class="character-info">
+                <div class="avatar-frame">
+                    <div class="avatar-image"></div>
+                </div>
+                
+                <div class="character-details">
+                    <h2 class="name">LUZ NIGHTHACKER</h2>
+                    <p class="occupation">WEB DEVELOPER</p>
+                    <p class="corporation">LEGACY AI</p>
+                    <p class="availability">AVAILABLE FOR HIRE</p>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h3>NAVIGATION</h3>
+                <div class="social-links">
+                    <a href="../landingpage/index.html" class="social-link">BACK TO HOME</a>
+                    <a href="#services" class="social-link">VIEW SERVICES</a>
+                </div>
+            </div>
+
+            <div class="motto-section">
+                <h3>HIRE STATUS</h3>
+                <p>"READY TO TRANSFORM YOUR DIGITAL VISION INTO CYBERNETIC REALITY"</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content hire-main">
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-label">CREDITS</span>
+                    <span class="stat-value">SERVICES TIER: 4.97</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">RESPONSE TIME:</span>
+                    <span class="stat-value">< 24 HOURS</span>
+                </div>
+            </div>
+
+            <div class="mission-brief">
+                <h1>CONNECT WITH ME</h1>
+                <p class="mission-subtitle">INITIATE COLLABORATION PROTOCOL</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container" id="contact-form">
+                <div class="form-header">
+                    <h2>HOW SHOULD I CALL YOU?</h2>
+                    <p>ENTER YOUR CONTACT DETAILS TO BEGIN TRANSMISSION</p>
+                </div>
+                
+                <form class="hire-form" id="hireForm">
+                    <div class="form-group">
+                        <label for="name">YOUR NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">SENDING FROM</label>
+                        <input type="email" id="email" name="email" placeholder="your.name@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project">PROJECT TYPE</label>
+                        <select id="project" name="project" required>
+                            <option value="">SELECT PROJECT TYPE</option>
+                            <option value="website">WEBSITE DEVELOPMENT</option>
+                            <option value="webapp">WEB APPLICATION</option>
+                            <option value="ecommerce">E-COMMERCE PLATFORM</option>
+                            <option value="portfolio">PORTFOLIO WEBSITE</option>
+                            <option value="landing">LANDING PAGE</option>
+                            <option value="other">OTHER PROJECT</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">BUDGET RANGE</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">SELECT BUDGET RANGE</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-2500">$1,000 - $2,500</option>
+                            <option value="2500-5000">$2,500 - $5,000</option>
+                            <option value="5000+">$5,000+</option>
+                            <option value="discuss">LET'S DISCUSS</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeline">PROJECT TIMELINE</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="">SELECT TIMELINE</option>
+                            <option value="asap">ASAP (RUSH JOB)</option>
+                            <option value="1-2weeks">1-2 WEEKS</option>
+                            <option value="1month">1 MONTH</option>
+                            <option value="2-3months">2-3 MONTHS</option>
+                            <option value="flexible">FLEXIBLE</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">TRANSMITTED DATA</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="send-btn">
+                            <span class="btn-text">SEND MESSAGE [ENTER]</span>
+                            <span class="btn-loading">TRANSMITTING...</span>
+                        </button>
+                        <button type="button" class="discard-btn" onclick="discardForm()">
+                            DISCARD [ESC]
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Services Section -->
+            <div class="services-section" id="services">
+                <h2>AVAILABLE SERVICES</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Modern, responsive websites built with cutting-edge technologies</p>
+                        <div class="service-tech">React • Vue • Node.js</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>WEB APPLICATIONS</h3>
+                        <p>Interactive web apps with seamless user experiences</p>
+                        <div class="service-tech">JavaScript • TypeScript • APIs</div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>AI Integration</h3>
+                        <p>Using Gemini API, OpenAI API, And Anthropic To Integrate With Your Current System</p>
+                        <div class="service-tech">Gemini API, OpenAI API, Anthropic</div>
+                    </div>
+                
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="active-quest">
+                <h3>ACTIVE QUEST</h3>
+                <div class="quest-item">
+                    <span class="quest-name">OPEN FOR HIRE</span>
+                </div>
+            </div>
+
+            <div class="quest-log">
+                <h3>CONTACT INFO</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">EMAIL:</span>
+                        <span class="contact-value">luz@legacy.ai</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">RESPONSE:</span>
+                        <span class="contact-value">< 24 HOURS</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">TIMEZONE:</span>
+                        <span class="contact-value">UTC+7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rewards-section">
+                <h3>SKILLS</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">REACT</span>
+                    <span class="skill-tag">NODE.JS</span>
+                    <span class="skill-tag">JAVASCRIPT</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">HTML</span>
+                </div>
+            </div>
+
+            <div class="sound-effects">
+                <h3>STATUS</h3>
+                <div class="status-indicator online">ONLINE</div>
+            </div>
+
+            <div class="visual-settings">
+                <h3>QUICK ACTIONS</h3>
+                <div class="quick-actions">
+                    <button class="quick-btn" onclick="scrollToForm()">📧 CONTACT</button>
+                    <button class="quick-btn" onclick="downloadCV()">📄 RESUME</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="../landingpage/script.js"></script>
+    <script src="colab.js"></script>
+</body>
+</html>

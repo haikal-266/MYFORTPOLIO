@@ -16,6 +16,16 @@ body {
     height: 100vh;
 }
 
+/* Hide scrollbars globally */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* WebKit */
+}
+
 .mobile-profile-card {
     display: none;
 }
@@ -43,6 +53,12 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     overflow-y: auto;
     max-height: calc(100vh - 30px);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .profile-section {
@@ -161,6 +177,7 @@ body {
     border-radius: 4px;
     transition: all 0.3s ease;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .social-link:hover {
@@ -351,7 +368,7 @@ body {
 
 /* Right Sidebar */
 .right-sidebar {
-    background: linear-gradient(180deg, rgba(15, 25, 35, 0.95) 0%, rgba(25, 35, 45, 0.9) 100%);
+    background: linear-gradient(180deg, rgba(15, 15, 25, 0.95) 0%, rgba(25, 15, 35, 0.9) 100%);
     border: 1px solid #f06292;
     border-radius: 8px;
     padding: 18px;
@@ -359,6 +376,14 @@ body {
     box-shadow: 
         0 0 20px rgba(240, 98, 146, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 30px);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.right-sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .right-sidebar h3 {
