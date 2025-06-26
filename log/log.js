@@ -1,0 +1,1 @@
+// Future JavaScript for log page interactivity (e.g., filtering, sorting)

@@ -31,7 +31,14 @@ function initTabNavigation() {
     const mainContent = document.querySelector('.main-content');
     
     tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function(event) {
+            // If the tab is a link to another page, let the browser handle it
+            if (this.hasAttribute('href') && this.getAttribute('href') !== '#') {
+                return;
+            }
+
+            event.preventDefault(); // Prevent default action for non-linking tabs
+
             // Remove active class from all tabs
             tabs.forEach(t => t.classList.remove('active'));
             

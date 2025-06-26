@@ -1,0 +1,134 @@
+/* Connection Page Specific Styles */
+
+.connection-main {
+    padding: 20px;
+    position: relative;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.connection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.connection-card {
+    background: linear-gradient(145deg, rgba(25, 25, 45, 0.85), rgba(35, 25, 55, 0.8));
+    border: 2px solid #e91e63;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(233, 30, 99, 0.2);
+}
+
+.connection-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 40px rgba(233, 30, 99, 0.4);
+    border-color: #f06292;
+}
+
+.connection-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(240, 98, 146, 0.2) 0%, rgba(240, 98, 146, 0) 70%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+.connection-card:hover::before {
+    opacity: 1;
+}
+
+.connection-icon-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    border: 2px solid #e91e63;
+}
+
+.connection-icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Specific Icon Styles */
+.github .connection-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/25/25231.svg'); /* Replace with a better icon */
+    filter: invert(1);
+}
+
+.linkedin .connection-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/174/174857.svg'); /* Replace with a better icon */
+}
+
+.twitter .connection-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/124/124021.svg'); /* Replace with a better icon */
+}
+
+.discord .connection-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/2111/2111370.svg'); /* Replace with a better icon */
+    filter: invert(1);
+}
+
+.email .connection-icon {
+     background-image: url('https://image.flaticon.com/icons/svg/732/732200.svg'); /* Replace with a better icon */
+    filter: invert(1);
+}
+
+.hire-me .connection-icon {
+     background-image: url('https://image.flaticon.com/icons/svg/309/309705.svg'); /* Replace with a better icon */
+    filter: invert(1);
+}
+
+
+.connection-card h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    color: #f06292;
+    margin-bottom: 8px;
+}
+
+.connection-card p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    font-weight: 500;
+}
+
+.hire-me {
+    background: linear-gradient(145deg, rgba(233, 30, 99, 0.85), rgba(240, 98, 146, 0.8));
+    border-color: #fff;
+}
+
+.hire-me:hover {
+    border-color: #fff;
+}
+
+.hire-me h2 {
+    color: #fff;
+}
+
+.hire-me p {
+    color: #fff;
+}

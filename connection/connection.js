@@ -1,0 +1,1 @@
+// Future JavaScript for connection page interactivity
